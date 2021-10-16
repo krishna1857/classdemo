@@ -1,2 +1,3 @@
 1st line
 feature1 new changes 2
+From the above output, you can see the status that there are two untracked file design.css and newfile.txt available in the repository. To save it temporarily, we can use the git stash command. The git stash command is used as:
