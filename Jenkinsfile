@@ -4,14 +4,9 @@ pipeline{
         PATH = "/opt/apache-maven-3.6.3/bin:$PATH"
     }
     stages{
-        stage("Git checkout from SCM jenkisfile"){
+        stage("Run python file"){
             steps{
-                git 'https://github.com/krishna1857/classdemo'
-            }
-        }
-        stage("Maven Build"){
-            steps{
-                sh "mvn clean package"
+                sh 'python hello.py'
             }
         }
     }
